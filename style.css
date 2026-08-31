@@ -62,3 +62,19 @@ button:hover {
     text-decoration: line-through;
     opacity: 0.6;
 }
+@media (max-width: 600px) {
+    h1 {
+        font-size: 30px;
+    }
+    .contenedor {
+        width: 90%;
+        padding: 20px;
+    }
+    input {
+        font-size: 14px;
+    }
+    button {
+        width: 100%;
+        margin-top: 8px;
+    }
+}
