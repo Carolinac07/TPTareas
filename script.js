@@ -1,8 +1,14 @@
 let tareas = []
+
 function agregarTarea() {
 let titulo = document.getElementById("titulo").value
 let descripcion = document.getElementById("descripcion").value
 let fecha = document.getElementById("fecha").value
+
+if (titulo == "" || descripcion == "" || fecha == "") {
+    alert("Por favor, completá todos los campos")
+    return
+}
 let tarea = {
     id: Date.now(),
     titulo: titulo,
