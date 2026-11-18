@@ -8,7 +8,7 @@ function agregarTarea() {
         return
     }
 
-    fetch("http://localhost:3000/tareas", {
+    fetch("/tareas", {
         method: "POST",
         headers: {
             "Content-Type": "application/json"
@@ -29,7 +29,7 @@ function agregarTarea() {
 }
 
 function mostrarTareas() {
-    fetch("http://localhost:3000/tareas")
+    fetch("/tareas")
     .then(function(respuesta) {
         return respuesta.json()
     })
@@ -80,7 +80,7 @@ function mostrarTareas() {
 }
 
 function completarTarea(id) {
-    fetch("http://localhost:3000/tareas/" + id, {
+    fetch("/tareas/" + id, {
         method: "PUT"
     })
     .then(function() {
@@ -89,7 +89,7 @@ function completarTarea(id) {
 }
 
 function eliminarTarea(id) {
-    fetch("http://localhost:3000/tareas/" + id, {
+    fetch("/tareas/" + id, {
         method: "DELETE"
     })
     .then(function() {
