@@ -1,0 +1,45 @@
+body {
+    margin: 0;
+    font-family: Arial;
+    background-color: #f5e6d3;
+    color: #4a3a2a;
+}
+
+h1 {
+    text-align: center;
+}
+
+.contenedor {
+    width: 500px;
+    margin: auto;
+    background-color: white;
+    padding: 20px;
+}
+
+h2 {
+    text-align: center;
+}
+
+input {
+    width: 95%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+button {
+    padding: 10px;
+    background-color: #b98b65;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.tarea {
+    background-color: #f8f0e8;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.completada {
+    text-decoration: line-through;
+}
